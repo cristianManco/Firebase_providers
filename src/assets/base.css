@@ -1,0 +1,64 @@
+body {
+  min-height: 100vh;
+  background-image: url('../assets/banner-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Para que el fondo no se desplace con el scroll */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+@keyframes title-animation {
+  0% {
+    color: rgb(249, 8, 8);
+  }
+  25% {
+    color: rgb(5, 250, 250);
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: rgb(255, 0, 179);
+  }
+  100% {
+    color: green;
+  }
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: title-animation 4s infinite alternate;
+}
+
+/* Para pantallas pequeñas como teléfonos */
+@media (max-width: 767px) {
+  body {
+    background-position: top;
+    background-size: cover;
+  }
+}
+
+/* Para pantallas medianas como tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/* Para pantallas grandes como laptops y desktops */
+@media (min-width: 1024px) {
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+}

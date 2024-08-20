@@ -1,0 +1,16 @@
+{
+  "files": [],
+  
+  "compilerOptions": {
+    "types": ["node", "other-types-if-any"]
+  }
+  ,  
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}
